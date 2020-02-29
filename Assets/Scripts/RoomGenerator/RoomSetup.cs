@@ -11,9 +11,7 @@ public class RoomSetup : MonoBehaviour
 
     void Start()
     {
-        boardManager = FindObjectOfType<BoardManager>();
-        boardManager.roomSetupTransform = this.transform;
-        boardManager.SetupSccene(1);
+        
        // ObjectsRoom();
 
     }

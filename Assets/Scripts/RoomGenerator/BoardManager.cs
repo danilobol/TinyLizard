@@ -62,7 +62,7 @@ public class BoardManager : MonoBehaviour
             }
         }
 
-        BoardSetup(1);
+        
     }
 
     //configurando muros externos e o chão do tabuleiro
@@ -79,12 +79,43 @@ public class BoardManager : MonoBehaviour
 
                 GameObject toInstatiate = floorTiles[Random.Range(0, floorTiles.Length)];
 
-                //verificar se é muro externo
-                if (x == xp-1 || y == yp-1 || x == xp + colunms || y == yp + rows)
+                //verificar se é muro externo e a direção do muro externo
+
+                if (x == xp - 1 || y == yp - 1 || x == xp + colunms || y == yp + rows)
                 {
                     toInstatiate = outerWalls[Random.Range(0, outerWalls.Length)];
-                
+
                 }
+
+                if (openingDirection == 3)
+                {
+                    if (x == xp -1)
+                    {
+                        toInstatiate = floorTiles[Random.Range(0, floorTiles.Length)];
+                    }
+                }
+                else if(openingDirection==4)
+                {
+                    if (x == xp + colunms)
+                    {
+                        toInstatiate = floorTiles[Random.Range(0, floorTiles.Length)];
+                    }
+                }
+                else if (openingDirection == 2)
+                {
+                    if (y == yp + rows)
+                    {
+                        toInstatiate = floorTiles[Random.Range(0, floorTiles.Length)];
+                    }
+                }
+                else if (openingDirection == 1)
+                {
+                    if (y == yp - 1)
+                    {
+                        toInstatiate = floorTiles[Random.Range(0, floorTiles.Length)];
+                    }
+                }
+
                 GameObject instance = Instantiate(toInstatiate, new Vector3(x, y, 0f), Quaternion.identity) as GameObject;
                 instance.transform.SetParent(boardHolder);
             }
@@ -123,20 +154,23 @@ public class BoardManager : MonoBehaviour
 
     }
     
-    public void SetupSccene(int level)
+    public void SetupSccene(int openingDirection)
     {
         colunms = Random.Range(8, 16);
         rows = Random.Range(8, 16);
         //inicializou o grind
         InitialiseList();
+        BoardSetup(openingDirection);
 
         //instanciar um numero aleatorio de muros internos
-        
+
 
         InstanceExit(level);
-        if(startInstances == false)
+        if (startInstances == false)
+        {
+            startInstances = true;
             StartCoroutine(WaitAndPrint(2f));
-
+        }
     }
     
 
@@ -155,6 +189,7 @@ public class BoardManager : MonoBehaviour
                     toInstatiate = outerWalls[Random.Range(0, outerWalls.Length)];
 
                 }
+
                 GameObject instance = Instantiate(toInstatiate, new Vector3(x, y, 0f), Quaternion.identity) as GameObject;
                 instance.transform.SetParent(this.transform);
             }
@@ -170,7 +205,7 @@ public class BoardManager : MonoBehaviour
         GameObject p = Instantiate(mob, floor[x].transform.position, Quaternion.identity) as GameObject;
         floor = null;
         PlayerMovement pm = p.GetComponent<PlayerMovement>();
-        if(pm != null)
+        if(pm != null && cameraTop.gameObject.activeSelf == true)
         {
             cameraTop.gameObject.SetActive(false);
         }

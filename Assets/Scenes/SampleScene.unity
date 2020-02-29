@@ -270,5 +270,63 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7867483756402103053, guid: 096d004db0e20764096362b11d44a547,
+        type: 3}
+      propertyPath: wallTiles.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7867483756402103053, guid: 096d004db0e20764096362b11d44a547,
+        type: 3}
+      propertyPath: floorTiles.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7867483756402103053, guid: 096d004db0e20764096362b11d44a547,
+        type: 3}
+      propertyPath: wallTiles.Array.data[0]
+      value: 
+      objectReference: {fileID: 1758032112498215838, guid: 67f32f4236e0087438ee2b7ebe2cfad2,
+        type: 3}
+    - target: {fileID: 7867483756402103053, guid: 096d004db0e20764096362b11d44a547,
+        type: 3}
+      propertyPath: wallTiles.Array.data[1]
+      value: 
+      objectReference: {fileID: 151191538013990990, guid: 2883939bdcb8f9b4aa0f1d64f8edf835,
+        type: 3}
+    - target: {fileID: 7867483756402103053, guid: 096d004db0e20764096362b11d44a547,
+        type: 3}
+      propertyPath: wallTiles.Array.data[2]
+      value: 
+      objectReference: {fileID: 7442942339746536102, guid: 5e4e09cfc53061f4899f17527f6d32fe,
+        type: 3}
+    - target: {fileID: 7867483756402103053, guid: 096d004db0e20764096362b11d44a547,
+        type: 3}
+      propertyPath: wallTiles.Array.data[3]
+      value: 
+      objectReference: {fileID: 2888834761397956221, guid: cd209636625b0fc4091d0f4aecea0e00,
+        type: 3}
+    - target: {fileID: 7867483756402103053, guid: 096d004db0e20764096362b11d44a547,
+        type: 3}
+      propertyPath: wallTiles.Array.data[4]
+      value: 
+      objectReference: {fileID: 4239354830295025161, guid: d06564f3cec1b184c8dd8fc806b1f39b,
+        type: 3}
+    - target: {fileID: 7867483756402103053, guid: 096d004db0e20764096362b11d44a547,
+        type: 3}
+      propertyPath: floorTiles.Array.data[1]
+      value: 
+      objectReference: {fileID: 8344362095517804420, guid: 6bca1815fa0301b46b6043280e500a09,
+        type: 3}
+    - target: {fileID: 7867483756402103053, guid: 096d004db0e20764096362b11d44a547,
+        type: 3}
+      propertyPath: floorTiles.Array.data[2]
+      value: 
+      objectReference: {fileID: 2250221229237572884, guid: 49e1cc84837a51c4ba2dd8c9bfb324ed,
+        type: 3}
+    - target: {fileID: 7867483756402103053, guid: 096d004db0e20764096362b11d44a547,
+        type: 3}
+      propertyPath: floorTiles.Array.data[3]
+      value: 
+      objectReference: {fileID: 9159927602860693117, guid: a7373fc338b91b1449fee8535beba99b,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 096d004db0e20764096362b11d44a547, type: 3}

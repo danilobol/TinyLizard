@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class CreatureBehaviour : MonoBehaviour
+public abstract class CreatureBehaviour : Interactable
 {
     public Brain brain { protected set; get; }
 

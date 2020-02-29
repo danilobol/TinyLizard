@@ -23,6 +23,20 @@ public class Slime : MobBehaviour
         enemyDetector.OnEnemyOutOfRange += EnemyDetector_OnEnemyOutOfRange;
     }
 
+    public override void Interact()
+    {
+        base.Interact();
+        PickUp();
+    }
+
+    // Pick up the item
+    void PickUp()
+    {
+        Debug.Log("Picking up " + this.name);
+
+        //Destroy(gameObject);    // Destroy item from scene
+    }
+
     private void EnemyDetector_OnEnemyFound(GameObject target)
     {
         chaseBrain.Reset();
@@ -64,7 +78,7 @@ public class Slime : MobBehaviour
         if (brain != null)
             brain.Think();
 
-        animator.SetBool("Attacking", isAttacking);
+     //   animator.SetBool("Attacking", isAttacking);
     }
 
     public override void SetDefaultBrain()
