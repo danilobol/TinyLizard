@@ -1,0 +1,761 @@
+fileFormatVersion: 2
+guid: fb57d878d131a6b438316b95cb3a26c8
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Sequencia_-_Cena_3_Soldado_0
+    21300002: Sequencia_-_Cena_3_Soldado_1
+    21300004: Sequencia_-_Cena_3_Soldado_2
+    21300006: Sequencia_-_Cena_3_Soldado_3
+    21300008: Sequencia_-_Cena_3_Soldado_4
+    21300010: Sequencia_-_Cena_3_Soldado_5
+    21300012: Sequencia_-_Cena_3_Soldado_6
+    21300014: Sequencia_-_Cena_3_Soldado_7
+    21300016: Sequencia_-_Cena_3_Soldado_8
+    21300018: Sequencia_-_Cena_3_Soldado_9
+    21300020: Sequencia_-_Cena_3_Soldado_10
+    21300022: Sequencia_-_Cena_3_Soldado_11
+    21300024: Sequencia_-_Cena_3_Soldado_12
+    21300026: Sequencia_-_Cena_3_Soldado_13
+    21300028: Sequencia_-_Cena_3_Soldado_14
+    21300030: Sequencia_-_Cena_3_Soldado_15
+    21300032: Sequencia_-_Cena_3_Soldado_16
+    21300034: Sequencia_-_Cena_3_Soldado_17
+    21300036: Sequencia_-_Cena_3_Soldado_18
+    21300038: Sequencia_-_Cena_3_Soldado_19
+    21300040: Sequencia_-_Cena_3_Soldado_20
+    21300042: Sequencia_-_Cena_3_Soldado_21
+    21300044: Sequencia_-_Cena_3_Soldado_22
+    21300046: Sequencia_-_Cena_3_Soldado_23
+    21300048: Sequencia_-_Cena_3_Soldado_24
+    21300050: Sequencia_-_Cena_3_Soldado_25
+    21300052: Sequencia_-_Cena_3_Soldado_26
+    21300054: Sequencia_-_Cena_3_Soldado_27
+    21300056: Sequencia_-_Cena_3_Soldado_28
+    21300058: Sequencia_-_Cena_3_Soldado_29
+    21300060: Sequencia_-_Cena_3_Soldado_30
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 781
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd974e9f252c17448390d5cedb6c8d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_1
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 781
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9378e186aa53f749bd5c2283a38962c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_2
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 781
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 798c2fa970eedeb46831343dd256ee87
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_3
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 781
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf623b0a0ba7af14d80674a50d915a7c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_4
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 781
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6faf315e21b57345bde6d3ca321bf54
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_5
+      rect:
+        serializedVersion: 2
+        x: 2195
+        y: 781
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be3b4cdc514612c469820f67e74dfa11
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 625
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc622a9656e29974896261cc9cdacf82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_7
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 625
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09eb232d1df7fc84fa3e37e5d5a0b827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_8
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 625
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 433488c1f1ca22e47b28b68f5eac5a57
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_9
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 625
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c45add337338e439382f95208257ad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_10
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 625
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38648a8b1a1c1c54f902986446771198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_11
+      rect:
+        serializedVersion: 2
+        x: 2195
+        y: 625
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22771483d020a944a9b409cda829bce1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 469
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e03beb72f4aeeb48a38a3a9fc893a59
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_13
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 469
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a80c54dd09e3b9e48bbd5ee21d0db8b6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_14
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 469
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd96614b47e34c74380276be7f1ff37d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_15
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 469
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6476aa7a68050943b9f8d6bf13f2cff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_16
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 469
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963f64208dc28cc449be4d51b837598f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_17
+      rect:
+        serializedVersion: 2
+        x: 2195
+        y: 469
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e544b44e7b1fa42bbc241e131db5c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 313
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df8df3068cba7d4a9e31cc8b5c42242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_19
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 313
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aac293a4610842c4db6285830d8ae4c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_20
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 313
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fcbf7d4761ad114c8c80fce71bf420d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_21
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 313
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 542dc5ce663aee44b8e5de1c08dbab94
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_22
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 313
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b5eafe451c6dd46be286338025acc2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_23
+      rect:
+        serializedVersion: 2
+        x: 2195
+        y: 313
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba29dc4060bbbf4ca67f0c2987b8040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 157
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a34d84cbcbc4a4c937f85ae5991493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_25
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 157
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 369b5da623ee18243ade56a25825ebda
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_26
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 157
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59c2db097c224e74d826271d824cb38a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_27
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 157
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9530b9aaeee0844c9282c5ad01200f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_28
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 157
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ace377884a2c845b0339f67fd9423f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_29
+      rect:
+        serializedVersion: 2
+        x: 2195
+        y: 157
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7a4796864197a4b916e7a63eb757b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Soldado_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 439
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f415f3c0a9e82c428f0d20df4732687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ef3e355c58f5a394781a6352c29e3d93
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

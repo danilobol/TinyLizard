@@ -1,0 +1,761 @@
+fileFormatVersion: 2
+guid: b4a8e9e7e9ea8164c8a23f90b503fe89
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Sequencia_-_Cena_3_Tenente_0
+    21300002: Sequencia_-_Cena_3_Tenente_1
+    21300004: Sequencia_-_Cena_3_Tenente_2
+    21300006: Sequencia_-_Cena_3_Tenente_3
+    21300008: Sequencia_-_Cena_3_Tenente_4
+    21300010: Sequencia_-_Cena_3_Tenente_5
+    21300012: Sequencia_-_Cena_3_Tenente_6
+    21300014: Sequencia_-_Cena_3_Tenente_7
+    21300016: Sequencia_-_Cena_3_Tenente_8
+    21300018: Sequencia_-_Cena_3_Tenente_9
+    21300020: Sequencia_-_Cena_3_Tenente_10
+    21300022: Sequencia_-_Cena_3_Tenente_11
+    21300024: Sequencia_-_Cena_3_Tenente_12
+    21300026: Sequencia_-_Cena_3_Tenente_13
+    21300028: Sequencia_-_Cena_3_Tenente_14
+    21300030: Sequencia_-_Cena_3_Tenente_15
+    21300032: Sequencia_-_Cena_3_Tenente_16
+    21300034: Sequencia_-_Cena_3_Tenente_17
+    21300036: Sequencia_-_Cena_3_Tenente_18
+    21300038: Sequencia_-_Cena_3_Tenente_19
+    21300040: Sequencia_-_Cena_3_Tenente_20
+    21300042: Sequencia_-_Cena_3_Tenente_21
+    21300044: Sequencia_-_Cena_3_Tenente_22
+    21300046: Sequencia_-_Cena_3_Tenente_23
+    21300048: Sequencia_-_Cena_3_Tenente_24
+    21300050: Sequencia_-_Cena_3_Tenente_25
+    21300052: Sequencia_-_Cena_3_Tenente_26
+    21300054: Sequencia_-_Cena_3_Tenente_27
+    21300056: Sequencia_-_Cena_3_Tenente_28
+    21300058: Sequencia_-_Cena_3_Tenente_29
+    21300060: Sequencia_-_Cena_3_Tenente_30
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3976
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ca3ba2287d9ca4cb9d2f4ab7002dbd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_1
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 3976
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8eaf927957c134a4b9629b87aa1663e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_2
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 3976
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba4fa892cec821845bacd1bee906d2fe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_3
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 3976
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1243b960d7efad84e816f00b38f1b895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_4
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 3976
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab4044cce42c154ab2e292c197f26c1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_5
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 3976
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b75227232ac5b7948ac5e0571aecb64a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3181
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e685ef60a239aac4581bcfc69b9835bf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_7
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 3181
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c1d2af1ea27dc4483e61a2f8b1d8c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_8
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 3181
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a936bd756360cc443969b4bf902d8c9d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_9
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 3181
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f862ede5c6bf1c4db243023a20a76d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_10
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 3181
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd02e87b76c9f4b45addd01b9b0de5d2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_11
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 3181
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29c18334ae49930478b09977063124c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2386
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a38a59b55c18c64590556cdb7759fdc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_13
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 2386
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e211e1e2d9f9c41a5f93cfacf63cab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_14
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 2386
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc56504fbe716804d8051d184e580522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_15
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 2386
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b14e4fe9a7357574ea28a8c1b8baaed5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_16
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 2386
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 598b0089dd0254340a4f3e2bcff86e77
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_17
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 2386
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda748ce8a56e9d46ad10e06829f2747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1591
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a4e4eb5cca3544c816c01083f0d8de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_19
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 1591
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961e40d6c4a3eeb43a0d951f90ad29cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_20
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 1591
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a17cc1c41934b046a46c32630ef9f5e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_21
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 1591
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f8c0813464e88e41a25489c3b980cc7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_22
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 1591
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4074ec8f6b69da340be43291bf28dada
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_23
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 1591
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84901e996b0413e45b21cc71711375c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 796
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee9bc8c3de721914092adea71793a5f8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_25
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 796
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6113e1019f98ca468beee1692f87d99
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_26
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 796
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: effa1cac742c85141a910a903f2ff11e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_27
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 796
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5016478658bfe6e448adbdca95e6ebda
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_28
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 796
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be73ad6db7e480478c241d0f3666a7e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_29
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 796
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e553ad3fa6f73c47b196050c218bed2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_3_Tenente_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 372
+        height: 795
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b254b13fd536a6546860d6160d5101dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 7eece372d32fc1244961a87f10562900
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

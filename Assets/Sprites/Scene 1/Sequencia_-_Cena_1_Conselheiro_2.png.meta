@@ -1,0 +1,635 @@
+fileFormatVersion: 2
+guid: a51c076a092a5bf47abda5b8b54bacd8
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Sequencia_-_Cena_1_Conselheiro_2_0
+    21300002: Sequencia_-_Cena_1_Conselheiro_2_1
+    21300004: Sequencia_-_Cena_1_Conselheiro_2_2
+    21300006: Sequencia_-_Cena_1_Conselheiro_2_3
+    21300008: Sequencia_-_Cena_1_Conselheiro_2_4
+    21300010: Sequencia_-_Cena_1_Conselheiro_2_5
+    21300012: Sequencia_-_Cena_1_Conselheiro_2_6
+    21300014: Sequencia_-_Cena_1_Conselheiro_2_7
+    21300016: Sequencia_-_Cena_1_Conselheiro_2_8
+    21300018: Sequencia_-_Cena_1_Conselheiro_2_9
+    21300020: Sequencia_-_Cena_1_Conselheiro_2_10
+    21300022: Sequencia_-_Cena_1_Conselheiro_2_11
+    21300024: Sequencia_-_Cena_1_Conselheiro_2_12
+    21300026: Sequencia_-_Cena_1_Conselheiro_2_13
+    21300028: Sequencia_-_Cena_1_Conselheiro_2_14
+    21300030: Sequencia_-_Cena_1_Conselheiro_2_15
+    21300032: Sequencia_-_Cena_1_Conselheiro_2_16
+    21300034: Sequencia_-_Cena_1_Conselheiro_2_17
+    21300036: Sequencia_-_Cena_1_Conselheiro_2_18
+    21300038: Sequencia_-_Cena_1_Conselheiro_2_19
+    21300040: Sequencia_-_Cena_1_Conselheiro_2_20
+    21300042: Sequencia_-_Cena_1_Conselheiro_2_21
+    21300044: Sequencia_-_Cena_1_Conselheiro_2_22
+    21300046: Sequencia_-_Cena_1_Conselheiro_2_23
+    21300048: Sequencia_-_Cena_1_Conselheiro_2_24
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_1_Conselheiro_2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3685
+        width: 726
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a04fcd61dc0fdfc44aa2debddc489349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_1_Conselheiro_2_1
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 3685
+        width: 726
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d245771ae5733046a35782908554dbc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_1_Conselheiro_2_2
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 3685
+        width: 726
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88080018d80d39347b09503f72b7f620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_1_Conselheiro_2_3
+      rect:
+        serializedVersion: 2
+        x: 2178
+        y: 3685
+        width: 726
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04196b9d328d6994bbd2fb44b70f1437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_1_Conselheiro_2_4
+      rect:
+        serializedVersion: 2
+        x: 2904
+        y: 3685
+        width: 726
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32c028a37078cee4099f105be2c780a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_1_Conselheiro_2_5
+      rect:
+        serializedVersion: 2
+        x: 3630
+        y: 3685
+        width: 726
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06e94f280babedb489d0dade033c1a2a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_1_Conselheiro_2_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2764
+        width: 726
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5fda4714ed43ce44a3b8f534b76aa0d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_1_Conselheiro_2_7
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 2764
+        width: 726
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73cd33ca0c0edbd498c3ba4575ff2b54
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_1_Conselheiro_2_8
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 2764
+        width: 726
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e704e265655ea26488d1c2b2867f482a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_1_Conselheiro_2_9
+      rect:
+        serializedVersion: 2
+        x: 2178
+        y: 2764
+        width: 726
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7200afef9ff8b7446bd4aa9ba34157b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_1_Conselheiro_2_10
+      rect:
+        serializedVersion: 2
+        x: 2904
+        y: 2764
+        width: 726
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ba79c720b2dbd4391cee79d57763a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_1_Conselheiro_2_11
+      rect:
+        serializedVersion: 2
+        x: 3630
+        y: 2764
+        width: 726
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb5c9955d057344a9a8b9802d240c5b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_1_Conselheiro_2_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1843
+        width: 726
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 170444dbbd5c94a42a046c89de24c474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_1_Conselheiro_2_13
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 1843
+        width: 726
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865bf7222bd34e247982e52f8f37259b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_1_Conselheiro_2_14
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 1843
+        width: 726
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada28a75fcd1516479da9c356c9b79b9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_1_Conselheiro_2_15
+      rect:
+        serializedVersion: 2
+        x: 2178
+        y: 1843
+        width: 726
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db5097efbe893e4ebaa6352b4f5e4df
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_1_Conselheiro_2_16
+      rect:
+        serializedVersion: 2
+        x: 2904
+        y: 1843
+        width: 726
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b36984517510aa24b8bebcd62b372790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_1_Conselheiro_2_17
+      rect:
+        serializedVersion: 2
+        x: 3630
+        y: 1843
+        width: 726
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7fc677422f589b49b86c06e6ae3c80d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_1_Conselheiro_2_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 922
+        width: 726
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b58b6d3fa2aab4a964989cd74d3337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_1_Conselheiro_2_19
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 922
+        width: 726
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5ef98fe2e472e46b4ee2771887caea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_1_Conselheiro_2_20
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 922
+        width: 726
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a41ec13a14a1442a65e119aca1eb73
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_1_Conselheiro_2_21
+      rect:
+        serializedVersion: 2
+        x: 2178
+        y: 922
+        width: 726
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c97c6d70e5991a4ea277193d9c2414e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_1_Conselheiro_2_22
+      rect:
+        serializedVersion: 2
+        x: 2904
+        y: 922
+        width: 726
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ed1bbd17a049f342a47448960ff3599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_1_Conselheiro_2_23
+      rect:
+        serializedVersion: 2
+        x: 3630
+        y: 922
+        width: 726
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b229faa440de558478aefe3790a30843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sequencia_-_Cena_1_Conselheiro_2_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 726
+        height: 921
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1cfb55d58882ac4ca495430388ea6e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1727618b4c2218a45be5b882c3d02f4f
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
