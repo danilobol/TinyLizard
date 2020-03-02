@@ -61,9 +61,9 @@ public abstract class MobBehaviour : CreatureBehaviour
         }
     }
 
-    public void MeleeAttackTarget(Vector3 target)
+    public void MeleeAttackTarget(Vector3 target, LayerMask layer)
     {
-        Collider2D[] hitEnimies = Physics2D.OverlapCircleAll(this.transform.position, 0.5f, 8);
+        Collider2D[] hitEnimies = Physics2D.OverlapCircleAll(this.transform.position, 0.5f, layer);
 
         foreach (Collider2D enemy in hitEnimies)
         {

@@ -261,6 +261,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 943050244403042283, guid: 096d004db0e20764096362b11d44a547,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 3303767064306556805, guid: 13dfa26d7f558b64cb3ea66a9c141403,
+        type: 3}
     - target: {fileID: 7867483756402103053, guid: 096d004db0e20764096362b11d44a547,
         type: 3}
       propertyPath: wallTiles.Array.size

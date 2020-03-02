@@ -10,6 +10,7 @@ public class Slime : MobBehaviour
     public PatrolBrain patrolBrain;
     public ChaseBrain chaseBrain;
 
+    public LayerMask attackLayer;
     private Transform enemy;
 
     public override void Initialization()
@@ -73,7 +74,7 @@ public class Slime : MobBehaviour
 
     public void MeleeAttackBehaviour()
     {
-        MeleeAttackTarget(enemyDetector.target.transform.position);
+        MeleeAttackTarget(enemyDetector.target.transform.position, attackLayer);
     }
 
 

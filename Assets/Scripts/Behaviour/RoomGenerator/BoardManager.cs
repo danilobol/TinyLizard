@@ -27,7 +27,6 @@ public class BoardManager : MonoBehaviour
     [HideInInspector]
     public Count wallCount = new Count(1, 40); //quantidade aleatórias de paredes internas
 
-    public GameObject exit; //portal de saida
     public GameObject[] floorTiles; //tipos de chãos
     public GameObject[] wallTiles; //tipos de muros internos
 
@@ -41,7 +40,7 @@ public class BoardManager : MonoBehaviour
     [HideInInspector]
     public Transform boardHolder; // variavel para agrupar todos do tabuleiro
     private bool startInstances = false;
-    public GameObject player;
+    //public GameObject player;
 
     
 
@@ -74,7 +73,7 @@ public class BoardManager : MonoBehaviour
 
                          if (openingDirection == 3)
                          {
-                             if (x == xp)
+                             if (x == xp -1)
                              {
                                  toInstatiate = floorTiles[Random.Range(0, floorTiles.Length)];
                              }
@@ -88,7 +87,7 @@ public class BoardManager : MonoBehaviour
                          }
                          else if (openingDirection == 2)
                          {
-                             if (y == yp + rows -1)
+                             if (y == yp + rows -2)
                              {
                                  toInstatiate = floorTiles[Random.Range(0, floorTiles.Length)];
                              }
@@ -111,7 +110,6 @@ public class BoardManager : MonoBehaviour
         
             }
 
-    //retorna um valor aleatorio da nossa grindposition
    
 
     //pega o arrey de muros internos, junto com o valor minimo e maximo que vai ser adicionado daquele numero de objeto
@@ -133,6 +131,9 @@ public class BoardManager : MonoBehaviour
             instance.transform.SetParent(boardHolder);
             floor[num].tag = "floorX";
         }
+
+
+
         floor = null;
 
     }
@@ -174,7 +175,7 @@ public class BoardManager : MonoBehaviour
         startInstances = true;
         yield return new WaitForSeconds(waitTime);
         LayoutObjectAtRandom(wallTiles, wallCount.mininum, wallCount.maxnum);
-        InstantiatePrefabs(player);
+       // InstantiatePrefabs(player);
     }
 
 }
