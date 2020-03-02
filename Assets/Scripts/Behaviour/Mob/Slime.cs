@@ -59,7 +59,7 @@ public class Slime : MobBehaviour
     private void CreateBrain()
     {
         patrolBrain = new PatrolBrain(this, transform.position);
-        chaseBrain = new ChaseBrain(this, AttackBehaviour);
+        chaseBrain = new ChaseBrain(this, MeleeAttackBehaviour);
 
         patrolBrain.SetHomePosition(transform.position);
 
@@ -69,6 +69,11 @@ public class Slime : MobBehaviour
     public void AttackBehaviour()
     {
         ShootTarget(enemyDetector.target.transform.position);
+    }
+
+    public void MeleeAttackBehaviour()
+    {
+        MeleeAttackTarget(enemyDetector.target.transform.position);
     }
 
 

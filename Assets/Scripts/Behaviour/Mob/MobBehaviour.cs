@@ -61,6 +61,15 @@ public abstract class MobBehaviour : CreatureBehaviour
         }
     }
 
+    public void MeleeAttackTarget(Vector3 target)
+    {
+        Collider2D[] hitEnimies = Physics2D.OverlapCircleAll(this.transform.position, 0.5f, 8);
+
+        foreach (Collider2D enemy in hitEnimies)
+        {
+            Debug.Log("Atacou: " + enemy.gameObject.name);
+        }
+    }
     public IEnumerator WaitMoveDelay(float seconds)
     {
         locomotor.canMove = false;
@@ -102,6 +111,9 @@ public abstract class MobBehaviour : CreatureBehaviour
         pb.Shoot(gameObject, transform.position + projectileStartPos, new Vector3(Mathf.Cos(angle * Mathf.Deg2Rad) * 360, 0, Mathf.Sin(angle * Mathf.Deg2Rad) * 360));
 
     }
+
+   
+
 
     protected void OnMobDeathNotify()
     {

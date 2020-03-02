@@ -87,7 +87,7 @@ public class ChaseBrain : Brain
         if (target == null)
             return n0;
 
-        if (Vector3.Distance(mobBehaviour.transform.position, target.transform.position) <= mobBehaviour.mob.attackRange * 1.05f)
+        if (Vector3.Distance(mobBehaviour.transform.position, target.transform.position) <= mobBehaviour.mob.attackRange)
         {
             lastTimeAttack = Time.time;
             attackBehaviour();
