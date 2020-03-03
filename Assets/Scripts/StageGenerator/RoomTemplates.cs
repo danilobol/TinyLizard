@@ -31,11 +31,6 @@ public class RoomTemplates : MonoBehaviour
                     Instantiate(boss, rooms[i].transform.position, Quaternion.identity);
                     spawnedBoss = true;
                 }
-                if (i == 0)
-                {
-                    Instantiate(player, rooms[i].transform.position, Quaternion.identity);
-                    spawnedBoss = true;
-                }
             }
         }
         else

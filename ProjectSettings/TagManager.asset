@@ -9,6 +9,7 @@ TagManager:
   - wall
   - floor
   - floorX
+  - CamadaEscura
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - Player
   - Enemy
   - wall
-  - 
+  - BlackLayer
   - 
   - 
   - 

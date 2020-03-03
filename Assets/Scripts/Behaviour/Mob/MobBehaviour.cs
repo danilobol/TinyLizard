@@ -14,6 +14,10 @@ public abstract class MobBehaviour : CreatureBehaviour
     public Vector3 walkDestiny;
     public bool canAttack;
     public bool isAttacking;
+    public DamageableBehaviour damageableBehaviour;
+
+
+    private MobStatusUI mobStatusUI;
 
     public Animator animator;
 
@@ -23,6 +27,9 @@ public abstract class MobBehaviour : CreatureBehaviour
 
     public void Start()
     {
+        mobStatusUI = GetComponentInChildren<MobStatusUI>();
+        if (mobStatusUI != null)
+            mobStatusUI.SetMobBehaviour(damageableBehaviour.healthBehaviour);
         Initialization();
     }
 

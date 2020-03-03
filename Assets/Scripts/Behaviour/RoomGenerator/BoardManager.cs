@@ -40,7 +40,7 @@ public class BoardManager : MonoBehaviour
     [HideInInspector]
     public Transform boardHolder; // variavel para agrupar todos do tabuleiro
     private bool startInstances = false;
-    //public GameObject player;
+    public GameObject player;
 
     
 
@@ -175,7 +175,7 @@ public class BoardManager : MonoBehaviour
         startInstances = true;
         yield return new WaitForSeconds(waitTime);
         LayoutObjectAtRandom(wallTiles, wallCount.mininum, wallCount.maxnum);
-       // InstantiatePrefabs(player);
+        InstantiatePrefabs(player);
     }
 
 }
