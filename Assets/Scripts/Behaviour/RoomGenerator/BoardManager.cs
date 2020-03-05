@@ -25,7 +25,7 @@ public class BoardManager : MonoBehaviour
     public int colunms; //quantidades de colunas do tabuleiro
     public int rows; //quantidades de linhas do tabuleiro
     [HideInInspector]
-    public Count wallCount = new Count(1, 40); //quantidade aleatórias de paredes internas
+    public Count wallCount = new Count(1, 15); //quantidade aleatórias de paredes internas
 
     public GameObject[] floorTiles; //tipos de chãos
     public GameObject[] wallTiles; //tipos de muros internos
