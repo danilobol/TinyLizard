@@ -42,6 +42,10 @@ public class BoardManager : MonoBehaviour
     private bool startInstances = false;
     public GameObject player;
 
+
+    public GameObject miniCamera;
+    public GameObject UiMiniMap;
+
     
 
     //configurando muros externos e o chão do tabuleiro
@@ -158,13 +162,20 @@ public class BoardManager : MonoBehaviour
     private void InstantiatePrefabs(GameObject mob)
     {
         floor = GameObject.FindGameObjectsWithTag("floor");
-        int x = Random.Range(1000, floor.Length);
+        int x = Random.Range(10, floor.Length);
         GameObject p = Instantiate(mob, floor[x].transform.position, Quaternion.identity) as GameObject;
         floor = null;
         PlayerMovement pm = p.GetComponent<PlayerMovement>();
         if(pm != null && cameraTop != null)
         {
-            cameraTop.gameObject.SetActive(false);
+          //  cameraTop.transform.SetParent(pm.gameObject.transform);
+            cameraTop.cullingMask = (1 << 12) | (1 << 11) | (1 << 10) | (1 << 9) | (1 << 8) | (1 << 7) | (1 << 6) | (1 << 5) | (1 << 4) | (1 << 3) | (1 << 2) | (1 << 1) | (1 << 0);
+            cameraTop.orthographicSize = 5f;
+            //   cameraTop.gameObject.transform.position = new Vector3(0, 0, -10f);
+            miniCamera.SetActive(true);
+            UiMiniMap.SetActive(true);
+
+
         }
 
     }

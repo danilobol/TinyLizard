@@ -17,7 +17,7 @@ public class RoomSpawner : MonoBehaviour
     public bool spawned = false;
     private BoardManager boardManager;
 
-    public float waitTime = 4f;
+    public float waitTime = 0.5f;
 
     void Start()
     {
@@ -25,7 +25,7 @@ public class RoomSpawner : MonoBehaviour
         
         // Destroy(gameObject, waitTime);
         templates = FindObjectOfType<RoomTemplates>();
-        Invoke("Spawn", 0.1f);
+        Invoke("Spawn", 0.01f);
     }
 
 

@@ -18,6 +18,7 @@ public class RoomSetup : MonoBehaviour
 
     public void ObjectsRoom()
     {
+        Debug.Log("Aqui");
 
         int obejctCount = Random.Range(boardManager.wallCount.mininum, boardManager.wallCount.maxnum);
 
