@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerNetwork : MonoBehaviour
+public class FloorNetwork : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject playerCamera;
     [SerializeField]
     private MonoBehaviour[] scriptsToIgnore;
 
@@ -25,17 +23,11 @@ public class PlayerNetwork : MonoBehaviour
         }
         else
         {
-            playerCamera.SetActive(false);
             foreach (MobBehaviour item in scriptsToIgnore)
             {
-                if(item.enabled == true)
-                    item.enabled = false;
+                item.enabled = false;
             }
         }
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }

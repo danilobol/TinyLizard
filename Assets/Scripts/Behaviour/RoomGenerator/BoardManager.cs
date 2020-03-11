@@ -41,6 +41,7 @@ public class BoardManager : MonoBehaviour
     public Transform boardHolder; // variavel para agrupar todos do tabuleiro
     private bool startInstances = false;
     public GameObject player;
+    public bool playerInstance = false;
 
 
     public GameObject miniCamera;
@@ -146,14 +147,18 @@ public class BoardManager : MonoBehaviour
     {
         colunms = Random.Range(8, 16);
         rows = Random.Range(8, 16);
+        
+  
         BoardSetup(openingDirection);
-
+        
         //instanciar um numero aleatorio de muros internos
 
 
         if (startInstances == false)
         {
             startInstances = true;
+            miniCamera.SetActive(true);
+            UiMiniMap.SetActive(true);
             StartCoroutine(WaitAndPrint(4f));
         }
     }
@@ -187,6 +192,14 @@ public class BoardManager : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         LayoutObjectAtRandom(wallTiles, wallCount.mininum, wallCount.maxnum);
       //  InstantiatePrefabs(player);
+    }
+
+    private void Start()
+    {
+        miniCamera = GameObject.FindGameObjectWithTag("cammap");
+        UiMiniMap = GameObject.FindGameObjectWithTag("map");
+        miniCamera.SetActive(false);
+        UiMiniMap.SetActive(false);
     }
 
 }

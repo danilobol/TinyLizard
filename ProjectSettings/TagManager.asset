@@ -10,6 +10,9 @@ TagManager:
   - floor
   - floorX
   - CamadaEscura
+  - Beam
+  - map
+  - cammap
   layers:
   - Default
   - TransparentFX
