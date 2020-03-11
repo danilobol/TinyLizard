@@ -166,7 +166,7 @@ public class BoardManager : MonoBehaviour
         GameObject p = Instantiate(mob, floor[x].transform.position, Quaternion.identity) as GameObject;
         floor = null;
         PlayerMovement pm = p.GetComponent<PlayerMovement>();
-        if(pm != null && cameraTop != null)
+       /* if(pm != null && cameraTop != null)
         {
           //  cameraTop.transform.SetParent(pm.gameObject.transform);
             cameraTop.cullingMask = (1 << 12) | (1 << 11) | (1 << 10) | (1 << 9) | (1 << 8) | (1 << 7) | (1 << 6) | (1 << 5) | (1 << 4) | (1 << 3) | (1 << 2) | (1 << 1) | (1 << 0);
@@ -177,7 +177,7 @@ public class BoardManager : MonoBehaviour
 
 
         }
-
+        */
     }
     
 
@@ -186,7 +186,7 @@ public class BoardManager : MonoBehaviour
         startInstances = true;
         yield return new WaitForSeconds(waitTime);
         LayoutObjectAtRandom(wallTiles, wallCount.mininum, wallCount.maxnum);
-        InstantiatePrefabs(player);
+      //  InstantiatePrefabs(player);
     }
 
 }

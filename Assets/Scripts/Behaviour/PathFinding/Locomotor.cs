@@ -129,7 +129,7 @@ public class Locomotor : MonoBehaviour
             // properties update
             Direction = AngleHelper.GetDirection(transform.position, Destination);
             DestinationDistance = Vector3.Distance(transform.position, Destination);
-            FacingAngleDeg = AngleHelper.GetFacingAngleInDegree(Camera.main.transform.position, this);
+         //   FacingAngleDeg = AngleHelper.GetFacingAngleInDegree(Camera.main.transform.position, this);
         }
     }
 
