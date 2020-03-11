@@ -55,6 +55,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInput: {x: 0, y: 0}
   moveSpeed: 20
+  groundedLayer:
+    serializedVersion: 2
+    m_Bits: 8192
 --- !u!50 &-7385290198289002464
 Rigidbody2D:
   serializedVersion: 4

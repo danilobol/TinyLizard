@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
 
     public float moveSpeed;
 
+    public LayerMask groundedLayer;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         ShowGroung();
+        SetEnemyDead();
         playerInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         rb.velocity = playerInput.normalized * moveSpeed;
     }
@@ -39,6 +42,18 @@ public class PlayerMovement : MonoBehaviour
                     Destroy(cam.gameObject);
                 }
             }
+        }
+    }
+
+    private void SetEnemyDead()
+    {
+        bool IsGrounded = Physics2D.OverlapArea(new Vector2(transform.position.x , transform.position.y),
+                                                new Vector2(transform.position.x, transform.position.y), groundedLayer);
+
+        Debug.Log("IsGrounded: "+ IsGrounded);
+        if (IsGrounded)
+        {
+            Debug.Log("LOL");
         }
     }
 }
