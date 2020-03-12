@@ -13,18 +13,18 @@ MonoBehaviour:
   m_Name: Morte
   m_EditorClassIdentifier: 
   mobName: Morte
-  creatureType: 0
+  creatureType: 1
   scorePoints: 10000
   maxHealth: 100000
   size: 10000
-  idleWalkDistance: 10000000
-  maxHomeDistance: 1e+9
+  idleWalkDistance: 1000
+  maxHomeDistance: 1000
   speed: 15
   moveDelay: 1
   damage: 1000000
-  attackRange: 0
-  attackSpeed: 0
-  attackDurationTime: 0
+  attackRange: 1
+  attackSpeed: 2
+  attackDurationTime: 2
   neutralResistence: 0
   fireResistence: 0
   waterResistence: 0

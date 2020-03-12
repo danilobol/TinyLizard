@@ -84,6 +84,7 @@ MonoBehaviour:
   canAttack: 0
   isAttacking: 0
   damageableBehaviour: {fileID: 582159883819696988}
+  projectileMelee: {fileID: 11400000, guid: 4b89a108a9281fd41b53800f33193979, type: 2}
   animator: {fileID: 0}
   enemyDetector: {fileID: 1109441345634861033}
   lastTimeAttack: 2
@@ -187,6 +188,7 @@ MonoBehaviour:
   - {fileID: 8995555032088421596}
   - {fileID: 3440341671702233804}
   - {fileID: 582159883819696988}
+  - {fileID: 4532949135739775555}
   ObservedComponentsFoldoutOpen: 1
   viewIdField: 0
   instantiationId: -1

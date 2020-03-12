@@ -53,7 +53,7 @@ public class Slime : MobBehaviour
 
     public bool EnemyCriteria(GameObject target)
     {
-        PlayerMovement damageable = target.GetComponent<PlayerMovement>();
+        PlayerController damageable = target.GetComponent<PlayerController>();
         return damageable != null;
     }
 

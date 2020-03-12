@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraPosition : MonoBehaviour
 {
-    public PlayerMovement player;
+    public PlayerController player;
 
     void Update()
     {
@@ -12,7 +12,7 @@ public class CameraPosition : MonoBehaviour
         if (player != null)
             transform.position = new Vector3 (player.transform.position.x, player.transform.position.y, -10);
         else
-            player = FindObjectOfType<PlayerMovement>();
+            player = FindObjectOfType<PlayerController>();
 
 
 

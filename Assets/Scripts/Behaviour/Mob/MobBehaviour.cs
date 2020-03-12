@@ -78,6 +78,7 @@ public abstract class MobBehaviour : CreatureBehaviour
             DamageableBehaviour damageable = enemy.GetComponent<DamageableBehaviour>();
             if(damageable != null && damageable.gameObject != this.gameObject)
             {
+                Debug.Log("Acertou");
                 damageable.Damage(this.gameObject, new Damage(projectileMelee.damage));
             }
         }

@@ -4,9 +4,9 @@ using UnityEngine;
 
 public enum CreatureType
 {
-    Human,
-    Slime,
+    player,
+    mob,
     Plant,
-    Insect,
-    Animal
+    wall,
+    
 }

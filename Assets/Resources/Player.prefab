@@ -9,15 +9,15 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2365532039490421229}
-  - component: {fileID: 84338522174431588}
   - component: {fileID: -7385290198289002464}
   - component: {fileID: 5328910961684090814}
+  - component: {fileID: 6907803212970062450}
   - component: {fileID: 3976958731327158165}
   - component: {fileID: 242786014470332096}
-  - component: {fileID: 1061796929918623026}
   - component: {fileID: 8948537665948552622}
   - component: {fileID: 9216032683281241940}
-  - component: {fileID: 6907803212970062450}
+  - component: {fileID: 3409806141534035658}
+  - component: {fileID: 1157749044783126090}
   m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
@@ -41,23 +41,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &84338522174431588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3303767064306556805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff12b5a2c0042554c88d540451f8cfc9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerInput: {x: 0, y: 0}
-  moveSpeed: 20
-  groundedLayer:
-    serializedVersion: 2
-    m_Bits: 8192
 --- !u!50 &-7385290198289002464
 Rigidbody2D:
   serializedVersion: 4
@@ -105,6 +88,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.53146946, y: 0.6054479}
   m_EdgeRadius: 0
+--- !u!114 &6907803212970062450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3303767064306556805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02f613be91aab8e47b073356d79ea08d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 3639550057213102012}
+  scriptsToIgnore:
+  - {fileID: 3409806141534035658}
+  - {fileID: 3976958731327158165}
+  - {fileID: 242786014470332096}
 --- !u!114 &3976958731327158165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,22 +129,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea7cff7be87060849a9eeebfb0043dfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBehaviour: {fileID: 1061796929918623026}
+  healthBehaviour: {fileID: 3976958731327158165}
   creatureType: 0
   hasDamageTypeRestriction: 0
   damageTypeRestriction: 0
---- !u!114 &1061796929918623026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3303767064306556805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82aa235a694617e4a947942cb2206aac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8948537665948552622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,8 +155,8 @@ MonoBehaviour:
   ownershipTransfer: 0
   ObservedComponents:
   - {fileID: 9216032683281241940}
-  - {fileID: 1061796929918623026}
   - {fileID: 242786014470332096}
+  - {fileID: 3976958731327158165}
   ObservedComponentsFoldoutOpen: 1
   viewIdField: 0
   instantiationId: -1
@@ -252,7 +240,7 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
---- !u!114 &6907803212970062450
+--- !u!114 &3409806141534035658
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -261,12 +249,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 3303767064306556805}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02f613be91aab8e47b073356d79ea08d, type: 3}
+  m_Script: {fileID: 11500000, guid: 0c03ee447ea270a498a599120707ac03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCamera: {fileID: 3639550057213102012}
-  scriptsToIgnore:
-  - {fileID: 84338522174431588}
+  radius: 3
+  interactionTransform: {fileID: 0}
+  character: {fileID: 11400000, guid: ae910a8e04d0e404599d87fb73dd9e72, type: 2}
+  healthBehaviour: {fileID: 3976958731327158165}
+  damageableBehaviour: {fileID: 242786014470332096}
+  visual: {fileID: 0}
+  groundedLayer:
+    serializedVersion: 2
+    m_Bits: 8192
+  playerInput: {x: 0, y: 0}
+--- !u!114 &1157749044783126090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3303767064306556805}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1134be88aa99547a233cf34a8e891f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: {r: 0, g: 0, b: 0, a: 0}
+  meshRenderer: {fileID: 0}
 --- !u!1 &3639550057213102012
 GameObject:
   m_ObjectHideFlags: 0

@@ -172,7 +172,7 @@ public class BoardManager : MonoBehaviour
         int x = Random.Range(10, floor.Length);
         GameObject p = Instantiate(mob, floor[x].transform.position, Quaternion.identity) as GameObject;
         floor = null;
-        PlayerMovement pm = p.GetComponent<PlayerMovement>();
+        PlayerController pm = p.GetComponent<PlayerController>();
        /* if(pm != null && cameraTop != null)
         {
           //  cameraTop.transform.SetParent(pm.gameObject.transform);
@@ -193,7 +193,8 @@ public class BoardManager : MonoBehaviour
         startInstances = true;
         yield return new WaitForSeconds(waitTime);
         LayoutObjectAtRandom(wallTiles, wallCount.mininum, wallCount.maxnum);
-      //  InstantiatePrefabs(player);
+       
+        
     }
 
     private void Start()
