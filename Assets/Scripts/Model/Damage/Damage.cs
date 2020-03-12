@@ -18,15 +18,11 @@
     }
 
     public float damage;
-    public DamageElement damageElement;
-    public DamageType damageType;
 
     public Damage() { }
 
-    public Damage(DamageElement damageElement, DamageType damageType, float damage)
+    public Damage( float damage)
     {
-        this.damageElement = damageElement;
-        this.damageType = damageType;
         this.damage = damage;
     }
 }

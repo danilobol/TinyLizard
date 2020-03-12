@@ -157,7 +157,6 @@ GameObject:
   - component: {fileID: 8863603657426870960}
   - component: {fileID: 1550357710713550953}
   - component: {fileID: 3614501325449542137}
-  - component: {fileID: 8710380809784484691}
   - component: {fileID: 8929894693278153704}
   - component: {fileID: 733359761278757543}
   - component: {fileID: 5110414864661929593}
@@ -301,22 +300,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea7cff7be87060849a9eeebfb0043dfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBehaviour: {fileID: 8710380809784484691}
+  healthBehaviour: {fileID: 1550357710713550953}
   creatureType: 3
   hasDamageTypeRestriction: 0
   damageTypeRestriction: 0
---- !u!114 &8710380809784484691
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4575182636768653990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82aa235a694617e4a947942cb2206aac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8929894693278153704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,6 +326,9 @@ MonoBehaviour:
   ownershipTransfer: 0
   ObservedComponents:
   - {fileID: 733359761278757543}
+  - {fileID: 5110414864661929593}
+  - {fileID: 1550357710713550953}
+  - {fileID: 3614501325449542137}
   ObservedComponentsFoldoutOpen: 1
   viewIdField: 0
   instantiationId: -1
@@ -351,7 +341,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4575182636768653990}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
   m_Name: 
@@ -413,12 +403,12 @@ MonoBehaviour:
     ExtrapolateNumberOfStoredPositions: 1
     DrawErrorGizmo: 1
   m_RotationModel:
-    SynchronizeEnabled: 0
+    SynchronizeEnabled: 1
     InterpolateOption: 1
     InterpolateRotateTowardsSpeed: 180
     InterpolateLerpSpeed: 5
   m_ScaleModel:
-    SynchronizeEnabled: 0
+    SynchronizeEnabled: 1
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
@@ -429,7 +419,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4575182636768653990}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c2c2711058e4c584eb5f8db766bf85ad, type: 3}
   m_Name: 

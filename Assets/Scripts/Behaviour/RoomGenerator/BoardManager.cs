@@ -20,7 +20,7 @@ public class BoardManager : MonoBehaviour
     }
 
 
-
+    public static BoardManager instance;
     // Start is called before the first frame update
     public int colunms; //quantidades de colunas do tabuleiro
     public int rows; //quantidades de linhas do tabuleiro
@@ -47,6 +47,7 @@ public class BoardManager : MonoBehaviour
     public GameObject miniCamera;
     public GameObject UiMiniMap;
 
+    public GameLogic[] fatalEnemys;
     
 
     //configurando muros externos e o chão do tabuleiro
@@ -66,6 +67,7 @@ public class BoardManager : MonoBehaviour
 
 
                          GameObject toInstatiate = floorTiles[Random.Range(0, floorTiles.Length)];
+                
                             
 
                          //verificar se é muro externo e a direção do muro externo
@@ -105,7 +107,8 @@ public class BoardManager : MonoBehaviour
                              }
                          }
 
-                         GameObject instance = Instantiate(toInstatiate, new Vector3(x, y, 0f), Quaternion.identity) as GameObject;
+                         GameObject instance = PhotonNetwork.Instantiate(toInstatiate.name, new Vector3(x, y, 0f), Quaternion.identity, 0);
+
                          instance.transform.SetParent(boardHolder);
                        
 
@@ -148,7 +151,6 @@ public class BoardManager : MonoBehaviour
         colunms = Random.Range(8, 16);
         rows = Random.Range(8, 16);
         
-  
         BoardSetup(openingDirection);
         
         //instanciar um numero aleatorio de muros internos
@@ -196,6 +198,8 @@ public class BoardManager : MonoBehaviour
 
     private void Start()
     {
+        instance = this;
+        
         miniCamera = GameObject.FindGameObjectWithTag("cammap");
         UiMiniMap = GameObject.FindGameObjectWithTag("map");
         miniCamera.SetActive(false);

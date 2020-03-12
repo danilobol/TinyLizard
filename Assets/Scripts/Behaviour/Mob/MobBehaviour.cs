@@ -15,6 +15,7 @@ public abstract class MobBehaviour : CreatureBehaviour
     public bool canAttack;
     public bool isAttacking;
     public DamageableBehaviour damageableBehaviour;
+    public Projectile projectileMelee;
 
 
     private MobStatusUI mobStatusUI;
@@ -74,7 +75,11 @@ public abstract class MobBehaviour : CreatureBehaviour
 
         foreach (Collider2D enemy in hitEnimies)
         {
-            Debug.Log("Atacou: " + enemy.gameObject.name);
+            DamageableBehaviour damageable = enemy.GetComponent<DamageableBehaviour>();
+            if(damageable != null && damageable.gameObject != this.gameObject)
+            {
+                damageable.Damage(this.gameObject, new Damage(projectileMelee.damage));
+            }
         }
     }
     public IEnumerator WaitMoveDelay(float seconds)

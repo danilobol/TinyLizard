@@ -12,17 +12,29 @@ public class PlayerMovement : MonoBehaviour
 
     public LayerMask groundedLayer;
 
+    private bool dead = false;
+
+    public CharacterStatus characterStatus;
+
+
     // Start is called before the first frame update
     void Start()
     {
+        characterStatus = new CharacterStatus();
+
         rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void Update()
+    {
+        SetEnemyDead();
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         ShowGroung();
-        SetEnemyDead();
         playerInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         rb.velocity = playerInput.normalized * moveSpeed;
     }
@@ -47,13 +59,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void SetEnemyDead()
     {
-        bool IsGrounded = Physics2D.OverlapArea(new Vector2(transform.position.x , transform.position.y),
-                                                new Vector2(transform.position.x, transform.position.y), groundedLayer);
-
-        Debug.Log("IsGrounded: "+ IsGrounded);
-        if (IsGrounded)
+        bool IsGrounded = Physics2D.OverlapArea(new Vector2(transform.position.x - 0.5f, transform.position.y - 0.5f),
+                                                new Vector2(transform.position.x + 0.5f, transform.position.y -0.5f), groundedLayer);
+        if (!IsGrounded && dead == false)
         {
-            Debug.Log("LOL");
+            dead = true;
+            Debug.Log("Foi");
+            PhotonManager.instance.NPCInstances("BossFatal", this.transform.position);
         }
     }
 }

@@ -25,7 +25,14 @@ public class RoomSpawner : MonoBehaviour
         
         // Destroy(gameObject, waitTime);
         templates = FindObjectOfType<RoomTemplates>();
-        Invoke("Spawn", 0.01f);
+
+        GameObject bg = GameObject.FindGameObjectWithTag("beginMap");
+
+        if (bg == null)
+        {
+            Invoke("Spawn", 0.01f);
+        }
+
     }
 
 
@@ -75,7 +82,11 @@ public class RoomSpawner : MonoBehaviour
         {
             if (other.GetComponent<RoomSpawner>().spawned == false && spawned == false && other !=null)
             {
+                Debug.Log("foi");
+                PhotonManager.instance.NPCInstances("BeginMap", this.transform.position);
+
                 Instantiate(templates.closedRoom, transform.position, Quaternion.identity);
+
             }
 
             spawned = true;

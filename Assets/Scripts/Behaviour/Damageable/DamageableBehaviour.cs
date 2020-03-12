@@ -15,9 +15,7 @@ public class DamageableBehaviour : MonoBehaviour
 
     public void Damage(GameObject agressor, Damage damage)
     {
-        if (hasDamageTypeRestriction && damageTypeRestriction != damage.damageType)
-            return;
-
+      
         healthBehaviour.health.Damage(damage.damage);
         NotifyDamage(agressor, damage);
 

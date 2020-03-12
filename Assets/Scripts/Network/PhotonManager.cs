@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PhotonManager : Photon.MonoBehaviour
 {
+    public static PhotonManager instance;
     [SerializeField]
     private GameObject player;
     [SerializeField]
@@ -14,6 +15,7 @@ public class PhotonManager : Photon.MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        instance = this;
         PhotonNetwork.ConnectUsingSettings("1.0");
     }
 
@@ -36,5 +38,12 @@ public class PhotonManager : Photon.MonoBehaviour
             PhotonNetwork.Instantiate("MapGenerator", MapGenerator.transform.position, Quaternion.identity, 0);
         }
 
-    } 
+    }
+
+    public void NPCInstances(string npcName, Vector3 pos)
+    {
+        
+        PhotonNetwork.Instantiate(npcName, pos, Quaternion.identity, 0);
+    }
+
 }

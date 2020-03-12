@@ -13,6 +13,7 @@ TagManager:
   - Beam
   - map
   - cammap
+  - beginMap
   layers:
   - Default
   - TransparentFX
