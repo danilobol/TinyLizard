@@ -17,6 +17,7 @@ public class DamageableBehaviour : MonoBehaviour
     {
       
         healthBehaviour.health.Damage(damage.damage);
+
         NotifyDamage(agressor, damage);
 
     }

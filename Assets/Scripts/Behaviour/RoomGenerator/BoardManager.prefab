@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2462000492460842991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2462000492460842989}
+  - component: {fileID: 2462000492460842990}
+  - component: {fileID: 8178045193245538706}
+  m_Layer: 0
+  m_Name: BoardManager
+  m_TagString: Rooms
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2462000492460842989
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462000492460842991}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2462000492460842990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462000492460842991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25066400967d32347a921c6010345f41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colunms: 8
+  rows: 8
+  wallCount:
+    mininum: 1
+    maxnum: 15
+  exit: {fileID: 0}
+  floorTiles:
+  - {fileID: 3074071624013655797, guid: fc8b5ca0c150f824faadc9231bdd02f3, type: 3}
+  wallTiles:
+  - {fileID: 7202494858250420374, guid: d891d836872c0704d891a2c7754496aa, type: 3}
+  - {fileID: 7202494858250420374, guid: d891d836872c0704d891a2c7754496aa, type: 3}
+  - {fileID: 7202494858250420374, guid: d891d836872c0704d891a2c7754496aa, type: 3}
+  - {fileID: 7202494858250420374, guid: d891d836872c0704d891a2c7754496aa, type: 3}
+  outerWalls:
+  - {fileID: 7202494858250420374, guid: d891d836872c0704d891a2c7754496aa, type: 3}
+  cameraTop: {fileID: 0}
+  enemys: []
+  floor: []
+  roomSetupTransform: {fileID: 0}
+  boardHolder: {fileID: 0}
+  level: 0
+  player: {fileID: 3303767064306556805, guid: 13dfa26d7f558b64cb3ea66a9c141403, type: 3}
+--- !u!114 &8178045193245538706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462000492460842991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eb097997db2e7741a610ce7332e76b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

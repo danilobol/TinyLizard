@@ -16,15 +16,15 @@ MonoBehaviour:
   creatureType: 1
   scorePoints: 10000
   maxHealth: 100000
-  size: 10000
+  size: 1
   idleWalkDistance: 1000
   maxHomeDistance: 1000
   speed: 15
   moveDelay: 1
   damage: 1000000
-  attackRange: 1
-  attackSpeed: 2
-  attackDurationTime: 2
+  attackRange: 0.9
+  attackSpeed: 0.5
+  attackDurationTime: 0.5
   neutralResistence: 0
   fireResistence: 0
   waterResistence: 0

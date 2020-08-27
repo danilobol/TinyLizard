@@ -8,11 +8,11 @@ public class MobStatusUI : MonoBehaviour
     public FloatBarUI health;
 
 
-    public void SetMobBehaviour(HealthBehaviour healthBehaviour)
+    public void SetMobBehaviour(CharacterStatus characterStatus)
     {
         health.Set(
-            healthBehaviour.health.hp,
-            healthBehaviour.health.maxHp
+            characterStatus.health.hp,
+            characterStatus.health.maxHp
         );
 
     }

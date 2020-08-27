@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7774034024008499281
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7774034024008499283}
+  - component: {fileID: 7774034024008499280}
+  - component: {fileID: 4086561880122418732}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Rooms
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7774034024008499283
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7774034024008499281}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -512.50525, y: -132.2045, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7774034024008499280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7774034024008499281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25066400967d32347a921c6010345f41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colunms: 8
+  rows: 8
+  wallCount:
+    mininum: 1
+    maxnum: 15
+  exit: {fileID: 1470510709253107444, guid: 12ffff5b4d489ea47b56c6eb37d22e10, type: 3}
+  floorTiles:
+  - {fileID: 5554601433090457534, guid: 79868621473fce746ae09f173a706a09, type: 3}
+  wallTiles:
+  - {fileID: 7202494858250420374, guid: d891d836872c0704d891a2c7754496aa, type: 3}
+  - {fileID: 7202494858250420374, guid: d891d836872c0704d891a2c7754496aa, type: 3}
+  - {fileID: 7202494858250420374, guid: d891d836872c0704d891a2c7754496aa, type: 3}
+  - {fileID: 7202494858250420374, guid: d891d836872c0704d891a2c7754496aa, type: 3}
+  outerWalls:
+  - {fileID: 7202494858250420374, guid: d891d836872c0704d891a2c7754496aa, type: 3}
+  cameraTop: {fileID: 0}
+  enemys:
+  - {fileID: 4575182636768653990, guid: cb07313f008e8de4097508698340f64e, type: 3}
+  - {fileID: 8679255272153302234, guid: effc5caf23ace624aa60d763d000227a, type: 3}
+  floor: []
+  roomSetupTransform: {fileID: 7774034024008499283}
+  enemyList: []
+  boardHolder: {fileID: 0}
+  level: 500
+  player: {fileID: 3303767064306556805, guid: 13dfa26d7f558b64cb3ea66a9c141403, type: 3}
+--- !u!114 &4086561880122418732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7774034024008499281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eb097997db2e7741a610ce7332e76b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthPlayer: 30

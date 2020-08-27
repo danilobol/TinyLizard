@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4256705230594734905}
   - component: {fileID: 4256705230594734907}
   - component: {fileID: 4256705230594734906}
-  - component: {fileID: 4256705230594734900}
   m_Layer: 5
   m_Name: Health
   m_TagString: Untagged
@@ -75,20 +74,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4256705230594734900
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4256705230594734904}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8202103e2e66a9d44a39542415e30ed9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  statValue: {fileID: 4256705230967410916}
-  lerpSpeed: 0.5
 --- !u!1 &4256705230967410922
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,6 +162,7 @@ GameObject:
   - component: {fileID: 4256705231692688442}
   - component: {fileID: 4256705231692688436}
   - component: {fileID: 4256705231692688443}
+  - component: {fileID: 6005330054514718973}
   m_Layer: 5
   m_Name: HealthBackground
   m_TagString: Untagged
@@ -240,3 +226,17 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6005330054514718973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4256705231692688441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35799faaebbb0d440bc919d00281a9c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bar: {fileID: 4256705230594734906}
+  background: {fileID: 4256705231692688443}

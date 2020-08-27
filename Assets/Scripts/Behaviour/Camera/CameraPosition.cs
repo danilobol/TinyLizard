@@ -5,16 +5,24 @@ using UnityEngine;
 public class CameraPosition : MonoBehaviour
 {
     public PlayerController player;
+    public GameObject FocusCamera; //onde a camera vai focar
+    public bool active = false;
 
-    void Update()
+
+    private void Update()
     {
+        if(player != null)
+        {
+            if(active == false)
+            {
+                active = true;
+                FocusCamera.transform.SetParent(player.transform);
+            }
 
-        if (player != null)
-            transform.position = new Vector3 (player.transform.position.x, player.transform.position.y, -10);
+        }
         else
+        {
             player = FindObjectOfType<PlayerController>();
-
-
-
+        }
     }
 }

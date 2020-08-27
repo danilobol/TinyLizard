@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RoomSpawner : MonoBehaviour
 {
-
+    /*
     public int openingDirection;
     // 1 --> need bottom door
     // 2 --> need top door
@@ -15,13 +15,13 @@ public class RoomSpawner : MonoBehaviour
     private RoomTemplates templates;
     private int rand;
     public bool spawned = false;
-    private BoardManager boardManager;
+    //private BoardManager boardManager;
 
     public float waitTime = 0.5f;
 
     void Start()
     {
-        boardManager = FindObjectOfType<BoardManager>();
+       // boardManager = FindObjectOfType<BoardManager>();
         
         // Destroy(gameObject, waitTime);
         templates = FindObjectOfType<RoomTemplates>();
@@ -75,23 +75,26 @@ public class RoomSpawner : MonoBehaviour
             spawned = true;
         }
     }
-
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("SpawnPoint"))
         {
-            if (other.GetComponent<RoomSpawner>().spawned == false && spawned == false && other !=null)
+            if (other.GetComponent<RoomSpawner>().spawned == false && spawned == false)
             {
-                Debug.Log("foi");
-                PhotonManager.instance.NPCInstances("BeginMap", this.transform.position);
+                Debug.Log("Fim");
+                GameObject[] walls = GameObject.FindGameObjectsWithTag("wall");
+                for (int i = 0; i < 10; i++)
+                {
 
+                  //  Instantiate(BoardManager.instance.boss[Random.Range(0, BoardManager.instance.boss.Length)], walls[Random.Range(0, walls.Length - 10)].transform.position, Quaternion.identity);
+                }
+                Debug.Log("Instanciou Inimigos");
                 Instantiate(templates.closedRoom, transform.position, Quaternion.identity);
-
+                Destroy(gameObject);
             }
-
             spawned = true;
-
-
         }
     }
+
+*/
 }

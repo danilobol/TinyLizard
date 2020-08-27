@@ -4,92 +4,89 @@ using UnityEngine;
 
 public class Slime : MobBehaviour
 {
-    public Detector enemyDetector;
-    public float lastTimeAttack;
+    public int monsterAttack;
+    public int health;
+    public int points;
+    private int initHealth;
+    private Sprite icon;
+    private bool slectEnemy = false;
+    private PlayerController playerController;
 
-    public PatrolBrain patrolBrain;
-    public ChaseBrain chaseBrain;
-
-    public LayerMask attackLayer;
-    private Transform enemy;
+    DamageableBehaviour damageable;
 
     public override void Initialization()
     {
+        initHealth = health;
+        icon = GetComponentInChildren<SpriteRenderer>().sprite;
+        healthBehaviour = GetComponent<HealthBehaviour>();
+        healthBehaviour.health.hp.Set((float) health);
+        healthBehaviour.health.maxHp.Set((float)health);
+        playerController = FindObjectOfType<PlayerController>();
+
+        damageable = GetComponent<DamageableBehaviour>();
+       // StartMob(health);
+        damageable.OnDamageEvent += Damageable_OnDamageEvent;
         base.Initialization();
 
-        CreateBrain();
-
-        enemyDetector.Criteria = EnemyCriteria;
-        enemyDetector.OnEnemyFound += EnemyDetector_OnEnemyFound;
-        enemyDetector.OnEnemyOutOfRange += EnemyDetector_OnEnemyOutOfRange;
     }
 
-    public override void Interact()
+    private void Damageable_OnDamageEvent(GameObject agressor, Damage damage)
     {
-        base.Interact();
-        PickUp();
+        if (healthBehaviour.health.hp.Get() > 0) {
+            DamageableBehaviour damageableAgressor = agressor.GetComponent<DamageableBehaviour>();
+            Damage dam = new Damage();
+            dam.damage = monsterAttack;
+            damageableAgressor.Damage(this.gameObject, dam);
+            health = (int)healthBehaviour.health.hp.Get();
+            animator.SetTrigger("Attack");
+            SetEnemyUi();
+        }
     }
-
-    // Pick up the item
-    void PickUp()
+    public void SetEnemyUi()
     {
-        Debug.Log("Picking up " + this.name);
-
-        //Destroy(gameObject);    // Destroy item from scene
+        EnemyStatusUI ui = FindObjectOfType<EnemyStatusUI>();
+        ui.ActiveFrame();
+        ui.SetEnemy(health, monsterAttack, points, initHealth, icon);
     }
-
-    private void EnemyDetector_OnEnemyFound(GameObject target)
-    {
-        chaseBrain.Reset();
-        chaseBrain.SetTarget(target);
-        brain = chaseBrain;
-    }
-
-    private void EnemyDetector_OnEnemyOutOfRange(GameObject target)
-    {
-        patrolBrain.Reset();
-        brain = patrolBrain;
-    }
-
-    public bool EnemyCriteria(GameObject target)
-    {
-        PlayerController damageable = target.GetComponent<PlayerController>();
-        return damageable != null;
-    }
-
-    private void CreateBrain()
-    {
-        patrolBrain = new PatrolBrain(this, transform.position);
-        chaseBrain = new ChaseBrain(this, MeleeAttackBehaviour);
-
-        patrolBrain.SetHomePosition(transform.position);
-
-        brain = patrolBrain;
-    }
-
-    public void AttackBehaviour()
-    {
-        ShootTarget(enemyDetector.target.transform.position);
-    }
-
-    public void MeleeAttackBehaviour()
-    {
-        MeleeAttackTarget(enemyDetector.target.transform.position, attackLayer);
-    }
-
-
 
     void Update()
     {
-        if (brain != null)
-            brain.Think();
+        if (healthBehaviour.health.hp.Get() <= 0) {
+            StartCoroutine(MobDie(points));
+            EnemyStatusUI ui = FindObjectOfType<EnemyStatusUI>();
+            ui.DesableFrame();
+        }
 
-     //   animator.SetBool("Attacking", isAttacking);
+        if(playerController.target != this.gameObject)
+        {
+           // slectEnemy = false;
+        }
+
+        //   animator.SetBool("Attacking", isAttacking);
     }
 
-    public override void SetDefaultBrain()
+    private void OnMouseDown()
     {
-        brain = patrolBrain;
-        patrolBrain.Reset();
+        if (slectEnemy == true)
+        {
+            Debug.Log("Moveu");
+            MovePlayerToEnemy();
+        }
+        SetEnemyUi();
+        playerController.target = this.gameObject;
+        slectEnemy = true;
+        Debug.Log("Clica de novo");
     }
+
+    private void MovePlayerToEnemy()
+    {
+        //PlayerController play = GameObject.FindObjectOfType<PlayerController>();
+        playerController.MoveOnPlayer(transform.position, this.gameObject);
+
+    }
+    void OnMouseExit()
+    {
+        slectEnemy = false;
+    }
+
 }

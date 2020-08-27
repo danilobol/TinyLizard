@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 
 
-[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Rigidbody2D))]
 public class ProjectileBehaviour : MonoBehaviour
 {
     [HideInInspector]
@@ -20,10 +20,11 @@ public class ProjectileBehaviour : MonoBehaviour
 
     public bool areaAttack = false;
     public float radiusHit;
-    public Collider[] enemys;
+    public Collider2D[] enemys;
+    public LayerMask layer;
 
 
-   // private DamageableBehaviour damageableHit = null;
+    private DamageableBehaviour damageableHit = null;
 
 
 
@@ -78,7 +79,7 @@ public class ProjectileBehaviour : MonoBehaviour
 
     private void OnCollision(GameObject other)
     {
-        /*
+        
         DamageableBehaviour damageable = other.GetComponent<DamageableBehaviour>();
 
         ProjectileBehaviour otherProjectileBehaviour = other.GetComponent<ProjectileBehaviour>();
@@ -93,7 +94,7 @@ public class ProjectileBehaviour : MonoBehaviour
         }
         else if (damageable != null && damageable.gameObject != caster)
         {
-            damageable.Damage(caster, new Damage(projectile.damageElement, projectile.damageType, projectile.damage));
+            damageable.Damage(caster, new Damage(projectile.damage));
             damageableHit = damageable;
 
             if (destroyDelay == 0)
@@ -109,7 +110,7 @@ public class ProjectileBehaviour : MonoBehaviour
                 Destroy(gameObject, destroyDelay);
             }
         }
-        if (areaAttack)
+      /*  if (areaAttack)
         {
             Enemys();
         }
@@ -126,9 +127,9 @@ public class ProjectileBehaviour : MonoBehaviour
     {
         float radius = radiusHit * Mathf.Max(this.gameObject.transform.localScale.x, this.gameObject.transform.localScale.y);
         // Get random enemy
-        enemys = Physics.OverlapSphere(this.transform.position, radius);
+        enemys = Physics2D.OverlapCircleAll(this.transform.position, 3f, layer);
 
-        foreach (Collider enemy in enemys)
+        foreach (Collider2D enemy in enemys)
         {
             if (enemy != null)
             {

@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class RoomSetup : MonoBehaviour
 {
-    public BoardManager boardManager;
+   // public BoardManager boardManager;
     private GameObject[] floor;
 
-
+    /*
 
     void Start()
     {
@@ -36,4 +36,5 @@ public class RoomSetup : MonoBehaviour
         }
         floor = null;
     }
+*/
 }

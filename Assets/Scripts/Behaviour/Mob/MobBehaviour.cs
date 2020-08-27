@@ -6,6 +6,7 @@ public abstract class MobBehaviour : CreatureBehaviour
 {
     [Header("Mob")]
     public Mob mob;
+    
     public GameObject projectilePrefab = null;
 
     [Header("Mob Walking Behaviour")]
@@ -17,20 +18,22 @@ public abstract class MobBehaviour : CreatureBehaviour
     public DamageableBehaviour damageableBehaviour;
     public Projectile projectileMelee;
 
+    public HealthBehaviour healthBehaviour;
+    public CharacterStatus characterStatus = new CharacterStatus();
 
-    private MobStatusUI mobStatusUI;
+    [HideInInspector]
+    public MobStatusUI mobStatusUI;
 
     public Animator animator;
 
     public delegate void OnMobDeath(MobBehaviour mobBehaviour);
     public event OnMobDeath OnMobDeathEvent;
 
+    private bool mobStayDie = false;
+
 
     public void Start()
     {
-        mobStatusUI = GetComponentInChildren<MobStatusUI>();
-        if (mobStatusUI != null)
-            mobStatusUI.SetMobBehaviour(damageableBehaviour.healthBehaviour);
         Initialization();
     }
 
@@ -71,15 +74,15 @@ public abstract class MobBehaviour : CreatureBehaviour
 
     public void MeleeAttackTarget(Vector3 target, LayerMask layer)
     {
-        Collider2D[] hitEnimies = Physics2D.OverlapCircleAll(this.transform.position, 0.5f, layer);
+        Collider2D[] hitEnimies = Physics2D.OverlapCircleAll(this.transform.position, 3f, layer);
 
         foreach (Collider2D enemy in hitEnimies)
         {
             DamageableBehaviour damageable = enemy.GetComponent<DamageableBehaviour>();
             if(damageable != null && damageable.gameObject != this.gameObject)
             {
-                Debug.Log("Acertou");
-                damageable.Damage(this.gameObject, new Damage(projectileMelee.damage));
+                StartCoroutine(DamageMob(damageable));
+                
             }
         }
     }
@@ -136,18 +139,74 @@ public abstract class MobBehaviour : CreatureBehaviour
 
 
 
-    private IEnumerator MobDie()
+    public IEnumerator MobDie(int points)
     {
-        locomotor.isDestinationLock = true;
-        canAttack = false;
-        isAttacking = false;
-        animator.SetTrigger("death");
+        if (mobStayDie == false)
+        {
+            mobStayDie = true;
+            locomotor.isDestinationLock = true;
+            canAttack = false;
+            isAttacking = false;
+            animator.SetBool("Die", true);
+            Completed.BoardManager.instance.RemoveEnemyList(this.gameObject);
+            Completed.BoardManager.instance.enemyList.Remove(this.gameObject);
+            HealthBehaviour healt = FindObjectOfType<PlayerController>().GetComponent<HealthBehaviour>();
+
+            if (healt.health.hp.Get() + points > healt.health.maxHp.Get())
+            {
+                if (healt.health.hp.Get() + points < 100)
+                    healt.health.maxHp.Set(healt.health.hp.Get() + points);
+                else
+                {
+                    healt.health.maxHp.Set(100);
+                }
+            }
 
 
+            healt.health.Heal((float)points);
+
+        }
+        /*
+         * healthBehaviour.health.hp.Get()
+         characterStatus.health.maxHp.Set(healt);
+        characterStatus.health.hp.Set(healt);
+         */
+
+        //yield return new WaitForSeconds(1f);
 
         yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length + 0.1f);
-      //  if (dropItem != null)
-      //      dropItem.DropItemGo();
+        //  if (dropItem != null)
+        //      dropItem.DropItemGo();
+        if (mobStatusUI != null)
+            Destroy(mobStatusUI.gameObject);
         Destroy(gameObject);
     }
+
+    public void StartMob(float health)
+    {
+        characterStatus.health = healthBehaviour.health;
+
+        characterStatus.health.maxHp.Set(health);
+        characterStatus.health.hp.Set(health);
+
+        DamageableBehaviour damageableBehaviour = GetComponent<DamageableBehaviour>();
+        damageableBehaviour.healthBehaviour = healthBehaviour;
+        damageableBehaviour.creatureType = mob.creatureType;
+
+        if (mobStatusUI == null)
+            mobStatusUI = GetComponentInChildren<MobStatusUI>();
+        if (mobStatusUI != null)
+            mobStatusUI.SetMobBehaviour(characterStatus);
+    }
+
+
+    IEnumerator DamageMob(DamageableBehaviour damageable)
+    {
+        animator.SetTrigger("Attack");
+
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length + 1f);
+        damageable.Damage(this.gameObject, new Damage(projectileMelee.damage));
+
+    }
+   
 }

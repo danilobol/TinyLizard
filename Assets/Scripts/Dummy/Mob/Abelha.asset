@@ -13,17 +13,17 @@ MonoBehaviour:
   m_Name: Abelha
   m_EditorClassIdentifier: 
   mobName: Abelha
-  creatureType: 3
+  creatureType: 1
   scorePoints: 0
-  maxHealth: 10
+  maxHealth: 100
   size: 1
   idleWalkDistance: 10
   maxHomeDistance: 10
   speed: 1
   moveDelay: 2
   damage: 10
-  attackRange: 0.5
-  attackSpeed: 2
+  attackRange: 1
+  attackSpeed: 1
   attackDurationTime: 1
   neutralResistence: 0
   fireResistence: 0

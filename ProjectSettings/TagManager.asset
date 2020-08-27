@@ -14,6 +14,12 @@ TagManager:
   - map
   - cammap
   - beginMap
+  - InicialPlay
+  - Enemy
+  - Exit
+  - UI
+  - LevelImage
+  - TextImage
   layers:
   - Default
   - TransparentFX
@@ -29,8 +35,8 @@ TagManager:
   - BlackLayer
   - HealthBar
   - floor
-  - 
-  - 
+  - MiniMap
+  - pet
   - 
   - 
   - 

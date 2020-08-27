@@ -15,6 +15,6 @@ MonoBehaviour:
   characterId: 100
   characterName: "Camale\xE3o"
   creatureType: 0
-  baseHealth: 100
+  baseHealth: 1000
   baseSpeed: 10
   baseDamageAttack: 10
