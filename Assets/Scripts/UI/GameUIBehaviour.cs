@@ -9,6 +9,7 @@ public class GameUIBehaviour : MonoBehaviour
     [HideInInspector()]
     public CharacterStatus characterStatus;
     public Text forceText;
+    public GameObject itemUI;
 
     [Header("")]
     public PlayerStatusUI playerStatusUI;

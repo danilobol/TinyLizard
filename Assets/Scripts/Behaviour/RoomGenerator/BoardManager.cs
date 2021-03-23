@@ -54,7 +54,7 @@ namespace Completed
         [HideInInspector]
         public Transform boardHolder; // variavel para agrupar todos do tabuleiro
         private List<Vector3> grindPosition = new List<Vector3>(); //lista com possiveis posições para os tiles
-        public int level;
+        private int level;
         private int healthPlayer;
 
 

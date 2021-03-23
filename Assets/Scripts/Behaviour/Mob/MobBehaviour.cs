@@ -150,6 +150,10 @@ public abstract class MobBehaviour : CreatureBehaviour
             animator.SetBool("Die", true);
             Completed.BoardManager.instance.RemoveEnemyList(this.gameObject);
             Completed.BoardManager.instance.enemyList.Remove(this.gameObject);
+            DropItem dropItem = GetComponentInParent<DropItem>();
+            dropItem.DropItemMob((float)points);
+
+            /*
             HealthBehaviour healt = FindObjectOfType<PlayerController>().GetComponent<HealthBehaviour>();
 
             if (healt.health.hp.Get() + points > healt.health.maxHp.Get())
@@ -164,7 +168,7 @@ public abstract class MobBehaviour : CreatureBehaviour
 
 
             healt.health.Heal((float)points);
-
+            */
         }
         /*
          * healthBehaviour.health.hp.Get()

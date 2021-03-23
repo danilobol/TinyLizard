@@ -93,7 +93,7 @@ public class PlayerController : CreatureBehaviour
 
    private IEnumerator TimeMaxMove()
    {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
         isMove = false;
 
    }
@@ -118,7 +118,7 @@ public class PlayerController : CreatureBehaviour
     public void Attack(DamageableBehaviour damage)
     {
 
-        StartCoroutine(TimeEnemyAttack(3f));
+        StartCoroutine(TimeEnemyAttack(1.5f));
         anim.SetTrigger("Attack");
         Debug.Log("Acertou no: " + damage.gameObject.name);
         damage.Damage(this.gameObject, new Damage(attack));  
