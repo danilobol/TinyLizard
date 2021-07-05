@@ -12,6 +12,8 @@ public class Slime : MobBehaviour
     private bool slectEnemy = false;
     private PlayerController playerController;
 
+
+
     DamageableBehaviour damageable;
 
     public override void Initialization()
@@ -22,7 +24,7 @@ public class Slime : MobBehaviour
         healthBehaviour.health.hp.Set((float) health);
         healthBehaviour.health.maxHp.Set((float)health);
         playerController = FindObjectOfType<PlayerController>();
-
+        pointsExtra = (int)((points + initHealth) / monsterAttack);
         damageable = GetComponent<DamageableBehaviour>();
        // StartMob(health);
         damageable.OnDamageEvent += Damageable_OnDamageEvent;
@@ -45,8 +47,10 @@ public class Slime : MobBehaviour
     public void SetEnemyUi()
     {
         EnemyStatusUI ui = FindObjectOfType<EnemyStatusUI>();
+        if(automaticAttack == false)
+            pointsExtra = (int)((points + health) / monsterAttack);
         ui.ActiveFrame();
-        ui.SetEnemy(health, monsterAttack, points, initHealth, icon);
+        ui.SetEnemy(health, monsterAttack, points, initHealth, icon, pointsExtra, this.gameObject);
     }
 
     void Update()
@@ -67,15 +71,17 @@ public class Slime : MobBehaviour
 
     private void OnMouseDown()
     {
-        if (slectEnemy == true)
+        if(playerController.automaticAttack == false)
         {
-            Debug.Log("Moveu");
-            MovePlayerToEnemy();
+            if (slectEnemy == true)
+            {
+                MovePlayerToEnemy();
+            }
+            SetEnemyUi();
+            playerController.target = this.gameObject;
+            slectEnemy = true;
         }
-        SetEnemyUi();
-        playerController.target = this.gameObject;
-        slectEnemy = true;
-        Debug.Log("Clica de novo");
+       
     }
 
     private void MovePlayerToEnemy()
@@ -87,6 +93,11 @@ public class Slime : MobBehaviour
     void OnMouseExit()
     {
         slectEnemy = false;
+    }
+
+    public void Deadlyattack()
+    {
+        automaticAttack = true;
     }
 
 }

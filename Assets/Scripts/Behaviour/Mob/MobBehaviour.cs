@@ -31,6 +31,10 @@ public abstract class MobBehaviour : CreatureBehaviour
 
     private bool mobStayDie = false;
 
+    public int pointsExtra;
+
+    //quando o player estiver com ataque automático isso é true
+    public bool automaticAttack = false;
 
     public void Start()
     {
@@ -151,7 +155,11 @@ public abstract class MobBehaviour : CreatureBehaviour
             Completed.BoardManager.instance.RemoveEnemyList(this.gameObject);
             Completed.BoardManager.instance.enemyList.Remove(this.gameObject);
             DropItem dropItem = GetComponentInParent<DropItem>();
+            if (automaticAttack == true)
+                points += pointsExtra;
             dropItem.DropItemMob((float)points);
+            PlayerController player = FindObjectOfType<PlayerController>();
+            player.DisableDeadlyAttack();
 
             /*
             HealthBehaviour healt = FindObjectOfType<PlayerController>().GetComponent<HealthBehaviour>();

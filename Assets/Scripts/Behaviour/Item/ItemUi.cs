@@ -10,7 +10,6 @@ public class ItemUi : MonoBehaviour
    
     public void SetItemUi(int point)
     {
-        Debug.Log("---------------------> ADD os: "+ point);
         itemPointsText.text = point.ToString();
     }
 }

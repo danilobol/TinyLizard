@@ -62,12 +62,10 @@ MonoBehaviour:
   cameraTop: {fileID: 0}
   enemys:
   - {fileID: 4575182636768653990, guid: cb07313f008e8de4097508698340f64e, type: 3}
-  - {fileID: 8679255272153302234, guid: effc5caf23ace624aa60d763d000227a, type: 3}
   floor: []
   roomSetupTransform: {fileID: 7774034024008499283}
   enemyList: []
   boardHolder: {fileID: 0}
-  level: 500
   player: {fileID: 3303767064306556805, guid: 13dfa26d7f558b64cb3ea66a9c141403, type: 3}
 --- !u!114 &4086561880122418732
 MonoBehaviour:

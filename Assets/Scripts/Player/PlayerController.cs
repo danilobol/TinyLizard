@@ -59,7 +59,13 @@ public class PlayerController : CreatureBehaviour
     public GameObject target;
     private bool canAttack = true;
     private bool canMoving = true;
-    private bool automaticAttack = false; 
+    public bool automaticAttack = false;
+    
+
+    //Indicador de ataque
+
+        public GameObject indicateAttack;
+
 
 
 
@@ -100,7 +106,8 @@ public class PlayerController : CreatureBehaviour
 
     public void MoveOnPlayer(Vector3 pos)
     {
-        this.transform.position = pos;
+        if(turnAttack)
+            this.transform.position = pos;
         
     }
 
@@ -118,32 +125,17 @@ public class PlayerController : CreatureBehaviour
     public void Attack(DamageableBehaviour damage)
     {
 
-        StartCoroutine(TimeEnemyAttack(1.5f));
+        StartCoroutine(TimeEnemyAttack(1.8f, damage));
         anim.SetTrigger("Attack");
         Debug.Log("Acertou no: " + damage.gameObject.name);
-        damage.Damage(this.gameObject, new Damage(attack));  
 
     }
     
 
     private void Update()
     {
-       
-        /*
-        if (isMove)
-        {
-            Debug.Log("Move: "+ positionDestination);
-            StartCoroutine(TimeMaxMove());
-            
-            rb.MovePosition(transform.position + (Direction * moveSpeed * Time.deltaTime));
-            if (Vector2.Distance(transform.position, Destination) < 0.5f)
-            {
-                isMove = false;
-            }
-        }
-        */
 
-        if (Input.GetKey(KeyCode.Space) && turnAttack ==true)
+        if (automaticAttack==true && turnAttack ==true)
         {
             
             Collider2D proj = Physics2D.OverlapCircle(this.transform.position, 2f, enemyLayer);
@@ -229,10 +221,10 @@ public class PlayerController : CreatureBehaviour
                     RecoverDamage();
                 }
             }
-    }
+        }
 
         ShowGroung();
-        if (move && canMoving)
+        if (move && canMoving && turnAttack && automaticAttack == false)
         {
              horizontal = 0;     //Used to store the horizontal move direction.
              vertical = 0;       //Used to store the vertical move direction.
@@ -240,25 +232,6 @@ public class PlayerController : CreatureBehaviour
             horizontal = (int)(Input.GetAxisRaw("Horizontal"));
             vertical = (int)(Input.GetAxisRaw("Vertical"));
 
-            /*
-            if (horizontal > 0)
-            {
-                transform.localRotation = Quaternion.Euler(0, 180, 0);
-            }
-            else if(horizontal < 0)
-            {
-                transform.localRotation = Quaternion.Euler(0, 0, 0);
-            }
-
-            if (horizontal != 0)
-            {
-                vertical = 0;
-            }
-            else
-            {
-                horizontal = 0;
-            }
-            */
             if (canMoving == true)
             {
                 playerInput = new Vector2(horizontal, vertical);
@@ -343,17 +316,37 @@ public class PlayerController : CreatureBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex, LoadSceneMode.Single);
     }
 
-    private IEnumerator TimeEnemyAttack(float time)
+    private IEnumerator TimeEnemyAttack(float time, DamageableBehaviour damage)
     {
         turnAttack = false;
         yield return new WaitForSeconds(time);
+        damage.Damage(this.gameObject, new Damage(attack));
+        StartCoroutine(timeToReceiveAttack(time));
+    }
+
+    private IEnumerator timeToReceiveAttack(float time)
+    {
+        yield return new WaitForSeconds(time);
         turnAttack = true;
+
     }
 
     public void SetLevelPlayer(int healt, int attack)
     {
       this.healt = healt;
       this.attack = attack;
+    }
+
+    public void ActivateDeadlyAttack(DamageableBehaviour damage)
+    {
+        MoveOnPlayer(damage.transform.position);
+        Attack(damage);
+        automaticAttack = true;
+    }
+
+    public void DisableDeadlyAttack()
+    {
+        automaticAttack = false;
     }
 
 }
